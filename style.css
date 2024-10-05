@@ -1,0 +1,93 @@
+/* Basic styles for the puzzle game */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://i.postimg.cc/02ySz3tF/art-art-materials-background-1191710.jpg'); /* Outer background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 40px; /* Increased font size */
+  font-family: 'Pacifico', cursive; /* Stylish font */
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(4, 80px);
+  gap: 5px;
+  margin-bottom: 20px;
+  background-image: url('https://i.postimg.cc/024zbNKK/694398.jpg'); /* Inner background image */
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.tile {
+  background-color: #966F33;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+#resetButton {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#resetButton:hover {
+  background-color: #c0392b;
+}
+
+#startButton {
+padding: 10px 20px;
+background-color: #6de73c;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-right: 10px;
+}
+
+#startButton:hover {
+background-color: #19fa5c;
+}
